@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: fueleu_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: fueleu_db
+    ports:
+      - "5432:5432"
