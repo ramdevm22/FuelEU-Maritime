@@ -3,7 +3,7 @@ import {
   BankRecords, BankEntry, PoolResult, Pool,
 } from '../../core/domain/types';
 
-const BASE = '';
+const BASE = 'https://fueleu-backend-6qlb.onrender.com';
 
 async function apiFetch<T>(path: string, options?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${path}`, {
