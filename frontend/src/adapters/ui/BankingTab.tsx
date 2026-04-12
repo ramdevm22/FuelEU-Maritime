@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { getCB, getBankRecords, bankSurplus, applyBanked } from '../../adapters/infrastructure/api';
 import { ComplianceBalance, BankRecords } from '../../core/domain/types';
-import { Badge, Button, Card, Input, Spinner, ErrorMessage, SectionHeader, KpiCard } from '../../shared/components';
+import {Button, Card, Input, Spinner, ErrorMessage, SectionHeader, KpiCard } from '../../shared/components';
 
 export const BankingTab: React.FC = () => {
   const [shipId, setShipId] = useState('SHIP001');
